@@ -388,6 +388,7 @@ footer {
     width: 100vw;
     display: flex;
     transition: all 0.5s;
+    position: fixed;
 }
 
 .floatLeft{
