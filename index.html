@@ -29,17 +29,44 @@
 <!-- Body Start --------------------------------------------------------------------------------------------------------------------->
 
 <body>
+<!-- Hidden checkbox -->
+<input type="checkbox" id="menuToggle" class="menu-checkbox">
+    
+<div class="fullPageMenu">
+    <div class="floatLeft">
+        <div class="textBoxLeft">
+            <h2>Explore</h2>
+            <a href="Gallery/Gallery.html">Gallery</a>
+            <a href="train/train_3/train3.html">Train Gang</a>
+            <a href="roundtrip/roundtrip.html">Forgive Me For I Have sinθ'd</a>
+            <a href="calculator/calculator.html">Calculator</a>
+            <a href="splat/splat.html">Splat Zone</a>
+            <a href="RoeShamBoe/RoeShamBoe.html">RoeShamBoe With My Broe's</a>
+            <a href="features/features.html">features</a>
+            <a href="Scrolling Sensation/scrollingSensation.html">Scrolling Sensation</a>
+            <a href="Animations/animation.html">Animation</a>
+        </div>
+    </div>
+</div>
 
-    <header>
+<div class="header">
+    <!-- Label connected to checkbox to toggle it -->
+    <label for="menuToggle" class="menuContainer">
+        <i id="menuBars" class="fa-solid fa-bars"></i>
+    </label>
+    
+    <div class="toggleContainer">
+        <div class="toggle-switch">
+            <label class="switch-label">
+                <input type="checkbox" class="checkbox" onclick="toggleTheme()">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+    <!-- <header>
         <div class="header-left"></div>
-        <div class="header-middle">
-            <div class="bigManLinks">
-                <h1>
-                    <a href="https://github.com/Lachoutlaws/MathIsWild" class='bigman' target="_blank">LACHOUTLAWS</a> &
-                    <a href="https://github.com/crckfx/MathIsWild" class='bigman' target="_blank">CRCKFX</a>
-                    THINK MATH IS WILD
-                </h1>
-            </div>
         </div>
         <div class="toggle-switch">
             <label class="switch-label">
@@ -47,7 +74,10 @@
                 <span class="slider"></span>
             </label>
         </div>
-    </header>
+        <div class="toggleMenu">
+            <i class="fa-solid fa-bars" id="menuButton"></i>
+        </div>
+    </header> -->
 
     
     <div class="grow">
@@ -122,12 +152,21 @@
     </div>
 
 
-    <div class="twitch-container">
-        <div class="skyriacContainer">
-            <a class="skyriacLink" href="https://www.twitch.tv/skyriac_" target="_blank">
+    <div class="linksPanel">
+        <div class="girtByCSS">
+            <div class="secondaryContainer">
+            </div>
+            <a class="thirdTierButton" href="https://github.com/Lachoutlaws" target="_blank">
+                <i class="fa-brands fa-github-alt"></i>
+            </a>
+            <a class="fifthTierButton" href="https://www.twitch.tv/skyriac_" target="_blank">
                 <i class="fa-brands fa-twitch"></i>
             </a>
-            <p class="skyriacText">@Skyriac</p>
+            <a class="sixthTierButton" href="https://github.com/crckfx" target="_blank">
+                <i class="fa-brands fa-github-alt"></i>
+            </a>
+            <div class="mainButton">
+            </div>   
         </div>
     </div>
 

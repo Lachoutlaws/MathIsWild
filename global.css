@@ -56,9 +56,15 @@ header {
     min-height: 72px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     z-index: 1738; /* Im Like Hey Whats Up Hello */
     transition: color 500ms ease, background-color 500ms ease;
     /* transition:  500ms ease; */
+} 
+
+#menuButton{
+    margin-right: 60px;
+    margin-left: 20px;
 }
 header h1 {
     margin: 0;
@@ -127,7 +133,6 @@ a.bigman:hover {
     align-items: center;
     /* background-color: darkorange; */
     background-color: var(--color-gareth);
-    margin: 5px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -179,6 +184,233 @@ a.bigman:hover {
     place-content: center;
 }
 
+/* Links */
+
+.linksPanel{
+        width: 80%;
+        height: 70px;
+        /* background-color: rgb(183, 183, 183); */
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;
+        display: grid;
+        grid-template-columns: auto 65px 50px;
+        grid-template-rows: 1fr; /* Ensures a single row */
+        align-items: center; /* Aligns items vertically */
+        z-index: 1000;
+}
+
+.girtByCSS {
+    position: relative;
+    width: min-content;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    grid-column: 3;
+    grid-row: 1;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-right: 60px;
+    background-color: #580dd1;
+}
+
+.mainButton {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#0c0cb1, #580dd1);
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.secondaryContainer {
+    width: 80px;
+    height: 80px;
+    /* background: linear-gradient(#0cb138, #2ed10d); */
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: transform 0.5s ease, opacity 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.girtByCSS:hover .secondaryContainer {
+    opacity: 1;
+    transform: scale(2);
+    transition: transform 0.5s ease, opacity 0.5s ease, width 0.5s ease, height 0.5s ease;
+
+}
+
+.thirdTierButton {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fffa65, #ffa600);
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0; 
+    transform: translate(0, 0); 
+    transition: transform 0.5s ease, opacity 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.girtByCSS:hover .thirdTierButton {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transform: translate(0px, -65px); 
+    transition: transform 0.5s ease, opacity 0.5s ease, width 0.5s ease, height 0.5s ease;
+    z-index: 50;
+}
+
+.thirdTierButton:hover{
+    background: linear-gradient(135deg, #ffdb4d, #ff8c00);
+}
+
+.fifthTierButton {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fffa65, #ffa600);
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0; 
+    transform: translate(0, 0); 
+    transition: transform 0.5s ease, opacity 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.girtByCSS:hover .fifthTierButton {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transform: translate(-40px, -40px); 
+    transition: transform 0.5s ease, opacity 0.5s ease, width 0.5s ease, height 0.5s ease;
+    z-index: 50;
+}
+
+.fifthTierButton:hover{
+    background: linear-gradient(135deg, #ffdb4d, #ff8c00);
+}
+
+.sixthTierButton {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fffa65, #ffa600);
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0; 
+    transform: translate(0, 0); 
+    transition: transform 0.5s ease, opacity 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.girtByCSS:hover .sixthTierButton {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transform: translate(-65px, 0px); 
+    transition: transform 0.5s ease, opacity 0.5s ease, width 0.5s ease, height 0.5s ease;
+    z-index: 50;
+}
+
+.sixthTierButton:hover{
+    background: linear-gradient(135deg, #ffdb4d, #ff8c00);
+}
+
+/* Footer */
+
 footer {
     flex: 1; width: 100%; display: flex;
+}
+
+.header {
+    width: 80%;
+    height: 70px;
+    /* background-color: rgb(183, 183, 183); */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: auto 65px 50px;
+    grid-template-rows: 1fr; /* Ensures a single row */
+    align-items: center; /* Aligns items vertically */
+    z-index: 1000;
+}
+
+.menuContainer {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3; 
+    grid-row: 1;
+}
+
+.toggleContainer {
+    height: 100%;
+    width: 75px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2; 
+    grid-row: 1;
+}
+
+/* Hide the checkbox */
+.menu-checkbox {
+    display: none;
+}
+
+/* Default state (hidden menu) */
+.fullPageMenu {
+    height: 1vh;
+    width: 1vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.5s;
+    background-color: rgb(201, 215, 228);
+    display: none; /* Start hidden */
+}
+
+/* When checkbox is checked, show menu */
+.menu-checkbox:checked ~ .fullPageMenu {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.floatLeft{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    float: left;
+    background-color: #ff8c00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBoxLeft{
+    width: 50%;
+    height: 40%;
+    background-color: #fbeddc;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 490px) {
+    .floatLeft{
+        width: 100%;
+    }
 }
