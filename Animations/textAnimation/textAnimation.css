@@ -1,15 +1,3 @@
-/* .letter:hover {
-    transform: 
-    scale(var(--hover-scale, 1.5))
-    rotate(var(--rotation-angle, 0deg))
-    skew(var(--hover-skew, 0deg)); 
-    color: var(--hover-color, rgb(0, 0, 0));
-    background-color: var(--hover-bg, rgb(255, 255, 255));
-    opacity: var(--hover-opacity, 1);
-    border: var(--hover-border, 0px solid transparent);
-    letter-spacing: var(--hover-spacing, 0px);
-} */
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 100px); /* 3 columns of 100px each */

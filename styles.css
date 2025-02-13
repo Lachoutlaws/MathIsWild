@@ -1,0 +1,271 @@
+/* Links */
+
+
+.linksPanel{
+    width: 80%;
+    height: 70px;
+    /* background-color: rgb(183, 183, 183); */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: auto 65px 50px;
+    grid-template-rows: 1fr; /* Ensures a single row */
+    align-items: center; /* Aligns items vertically */
+    z-index: 1000;
+}
+
+.girtByCSS {
+position: relative;
+width: min-content;
+height: min-content;
+display: flex;
+justify-content: center;
+grid-column: 3;
+grid-row: 1;
+align-items: center;
+margin-bottom: 60px;
+margin-right: 60px;
+background-color: #580dd1;
+}
+
+.mainButton {
+width: 50px;
+height: 50px;
+background: linear-gradient(#0c0cb1, #580dd1);
+position: absolute;
+z-index: 2;
+border-radius: 50%;
+}
+
+.secondaryContainer {
+width: 80px;
+height: 80px;
+/* background: linear-gradient(#0cb138, #2ed10d); */
+border-radius: 50%;
+position: absolute;
+z-index: 1;
+opacity: 0;
+transform: scale(0.5);
+transition: transform 0.5s ease, opacity 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.girtByCSS:hover .secondaryContainer {
+opacity: 1;
+transform: scale(2);
+transition: transform 0.5s ease, opacity 0.5s ease, width 0.5s ease, height 0.5s ease;
+
+}
+
+.thirdTierButton {
+width: 10px;
+height: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #fffa65, #ffa600);
+position: absolute;
+border-radius: 50%;
+opacity: 0; 
+transform: translate(0, 0); 
+transition: transform 0.5s ease, opacity 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.girtByCSS:hover .thirdTierButton {
+width: 40px;
+height: 40px;
+opacity: 1;
+transform: translate(0px, -65px); 
+transition: transform 0.5s ease, opacity 0.5s ease, width 0.5s ease, height 0.5s ease;
+z-index: 50;
+}
+
+.thirdTierButton:hover{
+background: linear-gradient(135deg, #ffdb4d, #ff8c00);
+}
+
+.fifthTierButton {
+width: 10px;
+height: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #fffa65, #ffa600);
+position: absolute;
+border-radius: 50%;
+opacity: 0; 
+transform: translate(0, 0); 
+transition: transform 0.5s ease, opacity 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.girtByCSS:hover .fifthTierButton {
+width: 40px;
+height: 40px;
+opacity: 1;
+transform: translate(-40px, -40px); 
+transition: transform 0.5s ease, opacity 0.5s ease, width 0.5s ease, height 0.5s ease;
+z-index: 50;
+}
+
+.fifthTierButton:hover{
+background: linear-gradient(135deg, #ffdb4d, #ff8c00);
+}
+
+.sixthTierButton {
+width: 10px;
+height: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #fffa65, #ffa600);
+position: absolute;
+border-radius: 50%;
+opacity: 0; 
+transform: translate(0, 0); 
+transition: transform 0.5s ease, opacity 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.girtByCSS:hover .sixthTierButton {
+width: 40px;
+height: 40px;
+opacity: 1;
+transform: translate(-65px, 0px); 
+transition: transform 0.5s ease, opacity 0.5s ease, width 0.5s ease, height 0.5s ease;
+z-index: 50;
+}
+
+.sixthTierButton:hover{
+background: linear-gradient(135deg, #ffdb4d, #ff8c00);
+}
+
+/* Header */
+
+.header {
+    width: 80%;
+    height: 70px;
+    /* background-color: rgb(183, 183, 183); */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: auto 65px 50px;
+    grid-template-rows: 1fr; /* Ensures a single row */
+    align-items: center; /* Aligns items vertically */
+    z-index: 1000;
+}
+
+.menuContainer {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3; 
+    grid-row: 1;
+}
+
+.toggleContainer {
+    height: 100%;
+    width: 75px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2; 
+    grid-row: 1;
+}
+
+/* Hide the checkbox */
+.menu-checkbox {
+    display: none;
+}
+
+/* Default state (hidden menu) */
+.fullPageMenu {
+    height: 1vh;
+    width: 1vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.5s;
+    background-color: rgb(201, 215, 228);
+    display: none; /* Start hidden */
+}
+
+/* When checkbox is checked, show menu */
+.menu-checkbox:checked ~ .fullPageMenu {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.floatLeft{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    float: left;
+    background-color: #ff8c00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBoxLeft{
+    width: auto;
+    height: 40%;
+    /* background-color: #fbeddc; */
+    display: flex;
+    flex-direction: column;
+}
+
+/* When the menu is open, adjust the header and buttons */
+.menu-checkbox:checked ~ .header {
+    position: fixed;  /* Keeps the header in place */
+    transition: all 0.3s;
+    z-index: 2000;  /* Ensures it's above other content */
+}
+
+/* Prevent scrolling when menu is open */
+.menu-checkbox:checked ~ body {
+    overflow: hidden;
+    height: 100vh; /* Prevents scrolling */
+    position: fixed;
+    width: 100vw;
+}
+
+@media (max-width: 734px) {
+    .floatLeft{
+        width: 100%;
+    }
+}
+
+/* crckfx 'switch theme' button  */
+.switchThemeBtn {
+    color: var(--color-text-3);
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkorange; */
+    background-color: var(--color-gareth);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.switchThemeBtn::after {
+    content: 'Dark Mode';
+}
+
+.theme-dark .switchThemeBtn::after {
+    content: 'Light Mode';
+}
+
+.switchThemeBtn:hover {
+    /* background-color: rgb(215, 118, 0); */
+    background-color: var(--color-garethson);
+}
+
