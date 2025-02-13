@@ -1,48 +1,4 @@
-/* Top */
-
-.initialEditContainer {
-    width: 100vw;
-    height: 100px;
-    display: flex;
-    align-items: center;
-}
-
-.textEdit, .textSizeEdit, .rotationAmountEditor {
-    width: 200px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.displayFontSize {
-    width: 80px;
-    height: 20px;
-    padding: 5px 10px;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Middle */
-
-.textDisplayContainer {
-    width: 100vw;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.letter {
-    display: inline-block;
-    font-weight: bold;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.letter:hover {
+/* .letter:hover {
     transform: 
     scale(var(--hover-scale, 1.5))
     rotate(var(--rotation-angle, 0deg))
@@ -52,142 +8,23 @@
     opacity: var(--hover-opacity, 1);
     border: var(--hover-border, 0px solid transparent);
     letter-spacing: var(--hover-spacing, 0px);
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 columns of 100px each */
+    grid-template-rows: repeat(3, 100px); /* 3 rows of 100px each */
+    gap: 20px; /* Adds spacing between the boxes */
 }
 
-.selected{
-    background-color: #4caf50;
-}
-
-/* Bottom */
-
-.onHoverEdits {
-    width: 100vw;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    background-color: orangered;
-}
-
-.onPlayContainer {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-
-.rotationAmountEditor, .colourPickerEditor, .skewEditor, .backgroundColourEditor, .spacingEditor, .borderWidthEditor, .opacityEditor, .scaleEditor{
-    width: 200px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#displayPickedColour {
-    padding: 5px;
-}
-
-.letterControls, .playControls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-    flex-direction: column;
-}
-
-#addStyleButton, #playButton {
-    padding: 8px 16px;
-    background-color: #4caf50;
+.box {
+    background-color: green;
     color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-#addStyleBtn:hover {
-    background-color: #388e3c;
-}
-
-#letterSelector {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#bgColorInput, #noBgCheckbox {
-    cursor: pointer;
-}
-
-
-
-
-.containerTwo{
-    width: 100%;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
 }
-
-.textBox{
-    width: 80%;
-    height: 80%;
-    background-color: #c7c7c7;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Lachie{
-    font-size: 44px;
-    margin: 5px;
-}
-
-.L{
-    color: #ff8c00;
-    transform: translateX(20px); /* Start slightly to the right */
-    opacity: 0;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.A{
-    color: #95ff00;
-    transform: translateX(20px); /* Start slightly to the right */
-    opacity: 0;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.C{
-    color: #00ff8c;
-    transform: translateX(20px); /* Start slightly to the right */
-    opacity: 0;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.H{
-    color: #00d9ff;
-    transform: translateX(20px); /* Start slightly to the right */
-    opacity: 0;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.I{
-    color: #0015ff;
-    transform: translateX(20px); /* Start slightly to the right */
-    opacity: 0;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.E{
-    color: #b700ff;
-    transform: translateX(20px); /* Start slightly to the right */
-    opacity: 0;
-    transition: opacity 0.5s ease-out, transform 0.8s ease-out;
-}
-

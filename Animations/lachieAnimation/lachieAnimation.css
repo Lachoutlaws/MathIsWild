@@ -1,19 +1,26 @@
-.heroSection{
-    width: 100vw;
-    height: fit-content;
-    padding-top: 40px;
-    padding-bottom: 40px;
+.containerOne{
+    width: 100%;
+    height: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.editBox{
+    width: 80%;
+    height: 80%;
+    background-color: #e0d0d0;
+    border-radius: 25px;
+    display: flex;
     align-items: center;
 }
 
 /* Lachie Animation */
 
-
 .containerTwo{
     width: 100%;
-    height: 400px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,48 +39,9 @@
 .Lachie{
     font-size: 44px;
     margin: 5px;
-}
-
-.L{
-    color: #ff8c00;
     transform: translateX(20px); /* Start slightly to the right */
     opacity: 0;
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.A{
-    color: #95ff00;
-    transform: translateX(20px); /* Start slightly to the right */
-    opacity: 0;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.C{
-    color: #00ff8c;
-    transform: translateX(20px); /* Start slightly to the right */
-    opacity: 0;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.H{
-    color: #00d9ff;
-    transform: translateX(20px); /* Start slightly to the right */
-    opacity: 0;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.I{
-    color: #0015ff;
-    transform: translateX(20px); /* Start slightly to the right */
-    opacity: 0;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.E{
-    color: #b700ff;
-    transform: translateX(20px); /* Start slightly to the right */
-    opacity: 0;
-    transition: opacity 0.5s ease-out, transform 0.8s ease-out;
 }
 
 .playAnimation{
@@ -100,5 +68,25 @@
     background-color: #0cb10c;
     padding: 11px 21px;
 }
+
+.playButton.disabled {
+    opacity: 0.5;
+    pointer-events: none; /* Prevents clicking */
+}
+
+.letterDisplay {
+    display: inline-block;
+    grid-column: 3;
+    grid-row: 1;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    min-width: 50px;
+    text-align: center;
+    font-size: 44px;
+    background: #f9f9f9;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
 
 
